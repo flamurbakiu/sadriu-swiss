@@ -1,0 +1,76 @@
+.footer {
+  overflow: hidden;
+}
+.infos {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px;
+  align-items: center;
+}
+
+.address p:nth-child(2),
+.contactt p:nth-child(2),
+.workingHours p:nth-child(2) {
+  padding-bottom: 4px;
+}
+
+.addressTitle,
+.contactTitle,
+.workingHoursTitle {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 8px;
+}
+
+.social {
+  width: 120px;
+}
+.facebook,
+.linkedin {
+  color: #3b5998;
+}
+.instagram {
+  color: 'black';
+}
+
+.facebook:hover,
+.instagram:hover,
+.linkedin:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  width: 80px;
+  margin: 0 auto;
+  display: block;
+}
+
+.emailAnchor,
+.telAnchor {
+  text-decoration: none;
+  color: black;
+}
+
+.emailAnchor:hover,
+.telAnchor:hover {
+  color: darkblue;
+}
+
+@media only screen and (max-width: 750px) {
+  .infos {
+    text-align: center;
+  }
+
+  .footer .address,
+  .footer .contactt,
+  .footer .workingHours {
+    display: none;
+  }
+  .social {
+    width: 320px;
+  }
+
+  .social a {
+    padding: 0px 20px;
+  }
+}

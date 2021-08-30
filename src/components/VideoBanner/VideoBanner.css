@@ -1,0 +1,111 @@
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: hidden;
+  /* background-image: linear-gradient(78deg, #e9edf3, #edf1f7); */
+  /* background-color: rgb(32, 32, 32); */
+}
+
+.video-banner {
+  /* height: 100%; */
+  bottom: 0;
+}
+
+.image-banner {
+  display: none;
+}
+
+.visit-us {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  background-image: url('../../assets/images/shapesvg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transform: rotate(10deg);
+  opacity: 0.8;
+  display: none;
+}
+
+.visit-us a {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+}
+
+.contact-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  position: absolute;
+  bottom: 17%;
+  /* text-align: center; */
+}
+
+.contact-box .contact-box-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 300px;
+  margin-right: 20px;
+  /* background-color: white;  */
+  opacity: 0.7;
+  border-radius: 50px;
+}
+
+.contact-box .contact-box-container a {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  /* color: black; */
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 100px;
+  background-color: black;
+  color: white;
+}
+
+/* .contact-box .contact-box-container .tel:hover,
+.contact-box .contact-box-container .mail:hover {
+  background-color: black;
+  color: white;
+} */
+
+.contact-box .contact-box-container a span {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1295px) {
+  .video-banner {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .video-banner {
+    /* height: 100%; */
+    display: none;
+  }
+
+  .image-banner {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    object-fit: cover;
+  }
+
+  .visit-us {
+    display: flex;
+  }
+}

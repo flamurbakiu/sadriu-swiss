@@ -1,0 +1,153 @@
+.cont {
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+.cont h1 {
+  text-align: center;
+  margin-top: 3%;
+  font-size: 60px;
+}
+
+.about-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-banner .left-side {
+  width: 50%;
+  text-align: center;
+}
+
+.about-banner .left-side img {
+  width: 550px;
+  margin-bottom: -3px;
+}
+
+.about-banner .right-side {
+  width: 50%;
+}
+
+.about-banner .right-side .content {
+  width: 90%;
+  margin-right: 8%;
+  margin-left: 2%;
+}
+
+.about-banner .right-side p {
+  font-size: 18px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.about-banner .right-side .paragraph {
+  font-size: 30px;
+  margin-top: 23%;
+}
+
+.about-banner .right-side .content button {
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+
+.about-banner .right-side .content button:hover {
+  box-shadow: 0 0 6px 3px rgb(112, 107, 107);
+}
+
+@media screen and (max-width: 1220px) {
+  .about-banner .left-side img {
+    margin-top: 5%;
+    width: 500px;
+  }
+
+  .about-banner .right-side p {
+    font-size: 16px;
+  }
+
+  .about-banner .right-side .paragraph {
+    margin-top: 30%;
+    font-size: 23px;
+  }
+
+  .about-banner .right-side .content button {
+    padding: 10px 25px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  /* .cont {
+    margin-top: 0px;
+  } */
+
+  .cont h1 {
+    font-size: 50px;
+  }
+
+  .about-banner {
+    flex-direction: column;
+  }
+
+  .about-banner .left-side {
+    text-align: center;
+    width: 100%;
+  }
+
+  .about-banner .right-side {
+    width: 90%;
+    margin-left: 7%;
+  }
+
+  .about-banner .right-side .paragraph {
+    font-size: 20px;
+    margin-top: 3%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* .cont {
+    margin-top: 0px;
+  } */
+
+  .cont h1 {
+    font-size: 40px;
+  }
+
+  .about-banner {
+    flex-direction: column;
+  }
+
+  .about-banner .left-side {
+    width: 100%;
+  }
+
+  .about-banner .left-side img {
+    width: 300px;
+  }
+
+  .about-banner .right-side {
+    width: 90%;
+    margin-left: 7%;
+  }
+
+  .about-banner .right-side .paragraph {
+    font-size: 17px;
+    margin-top: 10%;
+  }
+
+  .about-banner .right-side .content {
+    text-align: center;
+  }
+
+  .about-banner .right-side .content button {
+    padding: 10px 20px;
+    font-size: 17px;
+    width: 80%;
+  }
+}
